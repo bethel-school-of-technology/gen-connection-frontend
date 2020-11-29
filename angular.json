@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "GenCon"
+  "defaultProject": "GenCon",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GenXerComponent } from './gen-xer/gen-xer.component';
+import { GenHomeComponent } from './gen-home/gen-home.component';
 
 
 
@@ -13,6 +14,7 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
   declarations: [
     AppComponent,
     GenXerComponent,
+    GenHomeComponent,
     
   ],
   imports: [
