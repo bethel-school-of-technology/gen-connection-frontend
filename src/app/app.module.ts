@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
+import { GenLoginComponent } from './gen-login/gen-login.component';
 
 
 
@@ -15,6 +16,7 @@ import { GenHomeComponent } from './gen-home/gen-home.component';
     AppComponent,
     GenXerComponent,
     GenHomeComponent,
+    GenLoginComponent,
     
   ],
   imports: [
