@@ -7,13 +7,16 @@ import { GenSignupComponent } from './gen-signup/gen-signup.component';
 
 import { GenXerComponent } from './gen-xer/gen-xer.component';
 
+
+
 const routes: Routes = [
+  // localhost:3000 /gen-home - using gen-xer as a placeholder
   {
     path: '',
     redirectTo: 'gen-xer',
     pathMatch: 'full',
   },
-
+// localhost:3000 /gen-xer
   {
     path: 'gen-xer',
     component: GenXerComponent,
@@ -23,6 +26,8 @@ const routes: Routes = [
   {path: 'signup', component: GenSignupComponent}
  
 ];
+
+
 
 @NgModule({
   imports: [

@@ -24,7 +24,9 @@ import { GenSignupComponent } from './gen-signup/gen-signup.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
