@@ -1,0 +1,27 @@
+{
+    "post": [
+        {
+            "id": "1",
+            "title": "My Story",
+            "body": "I grew up a long time ago",
+            "author": "Jesse",
+            "gen": "X"
+        },
+        {
+            "id": "2",
+            "title": "My Aunts",
+            "body": "My Aunts were welders in the Seattle Shipyard!",
+            "author": "Lora",
+            "gen": "Boomer"
+        },
+        {
+            "id": "3",
+            "title": "My Grandpa",
+            "body": "My Grandpa was in WWII...",
+            "author": "Huss",
+            "gen": "Boomer"
+        }
+
+    ]
+
+}
