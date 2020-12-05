@@ -28,7 +28,9 @@ import { GenAboutComponent } from './gen-about/gen-about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
