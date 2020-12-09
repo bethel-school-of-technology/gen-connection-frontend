@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'home', component: GenHomeComponent },
   { path: 'login', component: GenLoginComponent },
   { path: 'signup', component: GenSignupComponent },
-  { path: 'user', component: GenUserComponent },
+  { path: 'user/:userId', component: GenUserComponent },
   { path: 'about', component: GenAboutComponent },
 ];
 
