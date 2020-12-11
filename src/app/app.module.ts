@@ -8,6 +8,7 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
+import { GenMillComponent } from './gen-mill/gen-mill.component';
 
 
 
@@ -19,6 +20,7 @@ import { GenSignupComponent } from './gen-signup/gen-signup.component';
     GenHomeComponent,
     GenLoginComponent,
     GenSignupComponent,
+    GenMillComponent,
     
   ],
   imports: [
