@@ -8,6 +8,11 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
+import { GenBoomComponent } from './gen-boom/gen-boom.component';
+import { CreatepostComponent } from './createpost/createpost.component';
+import { ListallpostComponent } from './listallpost/listallpost.component';
+import { ListonepostComponent } from './listonepost/listonepost.component';
+import { EditpostComponent } from './editpost/editpost.component';
 
 
 
@@ -16,9 +21,14 @@ import { GenSignupComponent } from './gen-signup/gen-signup.component';
   declarations: [
     AppComponent,
     GenXerComponent,
+    GenBoomComponent,
     GenHomeComponent,
     GenLoginComponent,
     GenSignupComponent,
+    CreatepostComponent,
+    ListallpostComponent,
+    ListonepostComponent,
+    EditpostComponent,
     
   ],
   imports: [

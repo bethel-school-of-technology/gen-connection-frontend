@@ -1,0 +1,11 @@
+<hr>
+<h3>Selected Post: {{currentPost.id}}
+    </h3>
+<hr/>
+<div>
+    <p>{{currentPost.title}}</p>
+    <p>{{currentPost.body}}</p>    
+    <p>{{currentPost.author}}</p>   
+    <p>{{currentPost.generation}}</p>      
+</div>
+<a routerLink="/edit/{{currentPost.id}}"></a>
