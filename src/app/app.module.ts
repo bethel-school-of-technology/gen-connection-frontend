@@ -8,11 +8,15 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
+<<<<<<< HEAD
 import { GenBoomComponent } from './gen-boom/gen-boom.component';
 import { CreatepostComponent } from './createpost/createpost.component';
 import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
 import { EditpostComponent } from './editpost/editpost.component';
+=======
+import { GenMillComponent } from './gen-mill/gen-mill.component';
+>>>>>>> 33ef3e076b735bc3b44f6baf9bfa7622ee921819
 
 
 
@@ -25,10 +29,14 @@ import { EditpostComponent } from './editpost/editpost.component';
     GenHomeComponent,
     GenLoginComponent,
     GenSignupComponent,
+<<<<<<< HEAD
     CreatepostComponent,
     ListallpostComponent,
     ListonepostComponent,
     EditpostComponent,
+=======
+    GenMillComponent,
+>>>>>>> 33ef3e076b735bc3b44f6baf9bfa7622ee921819
     
   ],
   imports: [
