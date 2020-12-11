@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, Routes, RouterModule } from '@angular/router';
-<<<<<<< HEAD
 import { GenAboutComponent } from './gen-about/gen-about.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
 import { GenUserComponent } from './gen-user/gen-user.component';
 import { GenXerComponent } from './gen-xer/gen-xer.component';
-=======
 
 import { GenBoomComponent } from './gen-boom/gen-boom.component';
-import { GenHomeComponent } from './gen-home/gen-home.component';
-import { GenLoginComponent } from './gen-login/gen-login.component';
-import { GenSignupComponent } from './gen-signup/gen-signup.component';
-import { GenXerComponent } from './gen-xer/gen-xer.component';
+
 
 import { CreatepostComponent } from './createpost/createpost.component';
 import { EditpostComponent } from './editpost/editpost.component';
@@ -21,7 +16,6 @@ import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
 import { GenMillComponent } from './gen-mill/gen-mill.component';
 
->>>>>>> e32d00b76dafee1cf8314e2f27084de0c747738b
 
 
 
