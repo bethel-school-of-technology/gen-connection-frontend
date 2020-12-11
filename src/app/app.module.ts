@@ -10,6 +10,8 @@ import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
 import { GenUserComponent } from './gen-user/gen-user.component';
 import { GenAboutComponent } from './gen-about/gen-about.component';
+import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
+import { EditUsersComponent } from './edit-users/edit-users.component';
 
 
 
@@ -23,6 +25,8 @@ import { GenAboutComponent } from './gen-about/gen-about.component';
     GenSignupComponent,
     GenUserComponent,
     GenAboutComponent,
+    ListAllUsersComponent,
+    EditUsersComponent,
     
   ],
   imports: [

@@ -1,4 +1,4 @@
-<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io!
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,14 +32,18 @@
         <div class="col-lg-10 col-xl-9 mx-auto">
           <div class="card card-signin flex-row my-5">
             <div class="card-img-left d-none d-md-flex">
-               <!-- Background image for card set in CSS! -->
+               
             </div>
             <div class="card-body">
               <h5 class="card-title text-center">Register</h5>
               <form class="form-signin">
                 <div class="form-label-group">
-                  <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                  <label for="inputUserame">Username</label>
+                  <input type="text" id="inputFirstName" class="form-control" placeholder="firstName" required autofocus>
+                  <label for="inputFirstName">First Name</label>
+                </div>
+                <div class="form-label-group">
+                  <input type="text" id="inputLastName" class="form-control" placeholder="lastName" required autofocus>
+                  <label for="inputLastName">Last name</label>
                 </div>
   
                 <div class="form-label-group">
@@ -71,4 +75,21 @@
     </div>
   </body>
   </html>
-  
+   -->
+<hr>
+   <h3>
+     Create a New User
+   </h3>
+   <hr>
+   <form (ngSubmit) = "createNew()">
+     <label>First Name </label>
+     <input type="text" name= "firstName" [(ngModel)] = "newUser.firstName">
+     <br>
+     <label>Last Name </label>
+     <input type="text" name= "lastName" [(ngModel)] = "newUser.lasttName">
+     <br>
+     <label> Email </label>
+     <input type="text" name= "email" [(ngModel)] = "newUser.email">
+     <br>
+     <button type="submit">Sign Up</button>
+   </form>
