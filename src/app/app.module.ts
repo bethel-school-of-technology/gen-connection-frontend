@@ -8,8 +8,18 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
+<<<<<<< HEAD
 import { GenUserComponent } from './gen-user/gen-user.component';
 import { GenAboutComponent } from './gen-about/gen-about.component';
+=======
+import { GenBoomComponent } from './gen-boom/gen-boom.component';
+import { GenMillComponent } from './gen-mill/gen-mill.component';
+import { CreatepostComponent } from './createpost/createpost.component';
+import { ListallpostComponent } from './listallpost/listallpost.component';
+import { ListonepostComponent } from './listonepost/listonepost.component';
+import { EditpostComponent } from './editpost/editpost.component';
+
+>>>>>>> e32d00b76dafee1cf8314e2f27084de0c747738b
 
 
 
@@ -18,11 +28,20 @@ import { GenAboutComponent } from './gen-about/gen-about.component';
   declarations: [
     AppComponent,
     GenXerComponent,
+    GenBoomComponent,
     GenHomeComponent,
     GenLoginComponent,
     GenSignupComponent,
+<<<<<<< HEAD
     GenUserComponent,
     GenAboutComponent,
+=======
+    CreatepostComponent,
+    ListallpostComponent,
+    ListonepostComponent,
+    EditpostComponent,
+    GenMillComponent
+>>>>>>> e32d00b76dafee1cf8314e2f27084de0c747738b
     
   ],
   imports: [
