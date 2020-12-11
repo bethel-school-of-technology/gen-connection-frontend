@@ -9,10 +9,12 @@ import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
 import { GenBoomComponent } from './gen-boom/gen-boom.component';
+import { GenMillComponent } from './gen-mill/gen-mill.component';
 import { CreatepostComponent } from './createpost/createpost.component';
 import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
 import { EditpostComponent } from './editpost/editpost.component';
+
 
 
 
@@ -29,6 +31,7 @@ import { EditpostComponent } from './editpost/editpost.component';
     ListallpostComponent,
     ListonepostComponent,
     EditpostComponent,
+    GenMillComponent
     
   ],
   imports: [

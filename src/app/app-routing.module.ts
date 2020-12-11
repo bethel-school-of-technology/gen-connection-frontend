@@ -11,6 +11,7 @@ import { CreatepostComponent } from './createpost/createpost.component';
 import { EditpostComponent } from './editpost/editpost.component';
 import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
+import { GenMillComponent } from './gen-mill/gen-mill.component';
 
 
 
@@ -18,7 +19,7 @@ import { ListonepostComponent } from './listonepost/listonepost.component';
 const routes: Routes = [
   // localhost:3000 /gen-home 
   {
-    path: '',
+    path: 'gen-home',
     redirectTo: 'home',
     pathMatch: 'full',
   },
@@ -26,6 +27,8 @@ const routes: Routes = [
   {path: 'gen-xer', component: GenXerComponent},
 // localhost:3000/ gen-boom
   {path: 'gen-boom', component: GenBoomComponent},
+//localhost:3000/gen-mill
+  {path: 'gen-mill', component: GenMillComponent},
 // localhost:3000/ gen-home
   {path: 'home', component: GenHomeComponent},
 // localhost:3000/ gen-login
