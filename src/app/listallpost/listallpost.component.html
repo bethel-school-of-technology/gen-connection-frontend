@@ -1,0 +1,12 @@
+
+<hr>
+<h3>List of Posts</h3>
+<hr>
+<div *ngFor = "let post of listOfPosts">
+    <p>{{post.id}},
+        <a routerLink = "/listallpost/{{post.id}}">
+         {{post.title}} {{post.body}} {{post.author}} {{post.generation}}
+        </a>
+    </p>
+</div>
+

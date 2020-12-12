@@ -11,19 +11,49 @@ import { GenUserComponent } from './gen-user/gen-user.component';
 import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
 
+import { GenBoomComponent } from './gen-boom/gen-boom.component';
+
+
+import { CreatepostComponent } from './createpost/createpost.component';
+import { EditpostComponent } from './editpost/editpost.component';
+import { ListallpostComponent } from './listallpost/listallpost.component';
+import { ListonepostComponent } from './listonepost/listonepost.component';
+import { GenMillComponent } from './gen-mill/gen-mill.component';
+
+
+
+
 const routes: Routes = [
-  { path: '', redirectTo: 'gen-xer', pathMatch: 'full' },
-
-  { path: 'gen-xer', component: GenXerComponent },
-  { path: 'home', component: GenHomeComponent },
-  { path: 'login', component: GenLoginComponent },
-  { path: 'signup', component: GenSignupComponent },
-  { path: 'user/:usersId', component: GenUserComponent },
-  { path: 'about', component: GenAboutComponent },
-  { path: 'listallusers', component: ListAllUsersComponent },
-  { path: 'edit', component: EditUsersComponent }
-
+  // localhost:3000 /gen-home 
+  {
+    path: 'gen-home',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+// localhost:3000 /gen-xer
+  {path: 'gen-xer', component: GenXerComponent},
+// localhost:3000/ gen-boom
+  {path: 'gen-boom', component: GenBoomComponent},
+//localhost:3000/gen-mill
+  {path: 'gen-mill', component: GenMillComponent},
+// localhost:3000/ gen-home
+  {path: 'home', component: GenHomeComponent},
+// localhost:3000/ gen-login
+  {path: 'login', component: GenLoginComponent},
+// localhost:3000/ gen-signup
+  {path: 'signup', component: GenSignupComponent},
+// localhost:3000/ listallposts
+  {path: 'listallpost', component: ListallpostComponent},
+// localhost:3000/ listonepost
+  {path: 'listonepost', component: ListonepostComponent},
+// localhost:3000/ createpost
+  {path: 'createpost', component: CreatepostComponent},
+// localhost:3000/ editpost
+  {path: 'editpost', component: EditpostComponent},
+ 
 ];
+
+
 
 @NgModule({
   imports: [

@@ -10,8 +10,13 @@ import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
 import { GenUserComponent } from './gen-user/gen-user.component';
 import { GenAboutComponent } from './gen-about/gen-about.component';
-import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
-import { EditUsersComponent } from './edit-users/edit-users.component';
+import { GenBoomComponent } from './gen-boom/gen-boom.component';
+import { GenMillComponent } from './gen-mill/gen-mill.component';
+import { CreatepostComponent } from './createpost/createpost.component';
+import { ListallpostComponent } from './listallpost/listallpost.component';
+import { ListonepostComponent } from './listonepost/listonepost.component';
+import { EditpostComponent } from './editpost/editpost.component';
+
 
 
 
@@ -20,19 +25,25 @@ import { EditUsersComponent } from './edit-users/edit-users.component';
   declarations: [
     AppComponent,
     GenXerComponent,
+    GenBoomComponent,
     GenHomeComponent,
     GenLoginComponent,
     GenSignupComponent,
     GenUserComponent,
     GenAboutComponent,
-    ListAllUsersComponent,
-    EditUsersComponent,
+    CreatepostComponent,
+    ListallpostComponent,
+    ListonepostComponent,
+    EditpostComponent,
+    GenMillComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,7 +18,7 @@ createNew() {
   this.myUserService.createUser(this.newUser).subscribe(response => {
     console.log(response);
     this.router.navigate(["listallusers"]);
-  }
+  })
 } 
 
 }
