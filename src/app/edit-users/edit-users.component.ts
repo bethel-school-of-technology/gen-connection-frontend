@@ -23,7 +23,7 @@ export class EditUsersComponent implements OnInit {
   ngOnInit(): void {
     // this.userID = parseInt(this.actRoute.snapshot.paramMap.get("userID"));
     console.log(this.userID);
-    this.editUser= Response;
+    // this.editUser= Response;
   }
 
   updateUser(){
