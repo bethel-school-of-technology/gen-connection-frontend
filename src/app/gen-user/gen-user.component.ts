@@ -20,6 +20,8 @@ export class GenUserComponent implements OnInit {
 
   ngOnInit(): void {
     // this.userID = parseInt(this.actRoute.snapshot.paramMap.get("userID"));
+    // this.myUserService.getOnePost(this.userID).subscribe(response => {
+      // console.log(response);
     console.log(this.userID);
   }
 }

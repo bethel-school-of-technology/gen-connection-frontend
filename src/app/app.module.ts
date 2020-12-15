@@ -16,6 +16,8 @@ import { CreatepostComponent } from './createpost/createpost.component';
 import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
 import { EditpostComponent } from './editpost/editpost.component';
+import { EditUsersComponent } from './edit-users/edit-users.component';
+import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
 
 
 
@@ -35,7 +37,9 @@ import { EditpostComponent } from './editpost/editpost.component';
     ListallpostComponent,
     ListonepostComponent,
     EditpostComponent,
-    GenMillComponent
+    GenMillComponent,
+    EditUsersComponent,
+    ListAllUsersComponent
     
   ],
   imports: [
