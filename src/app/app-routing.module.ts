@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
+// import { FormsModule} from '@angular/forms';
+// import { HttpClientModule} from '@angular/common/http';
 import { PreloadAllModules, Routes, RouterModule } from '@angular/router';
-
-import { GenBoomComponent } from './gen-boom/gen-boom.component';
+// import { EditUsersComponent } from './edit-users/edit-users.component';
+import { GenAboutComponent } from './gen-about/gen-about.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
+import { GenUserComponent } from './gen-user/gen-user.component';
 import { GenXerComponent } from './gen-xer/gen-xer.component';
+// import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
+
+import { GenBoomComponent } from './gen-boom/gen-boom.component';
+
 
 import { CreatepostComponent } from './createpost/createpost.component';
 import { EditpostComponent } from './editpost/editpost.component';

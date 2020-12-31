@@ -8,6 +8,8 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { GenHomeComponent } from './gen-home/gen-home.component';
 import { GenLoginComponent } from './gen-login/gen-login.component';
 import { GenSignupComponent } from './gen-signup/gen-signup.component';
+import { GenUserComponent } from './gen-user/gen-user.component';
+import { GenAboutComponent } from './gen-about/gen-about.component';
 import { GenBoomComponent } from './gen-boom/gen-boom.component';
 import { GenMillComponent } from './gen-mill/gen-mill.component';
 import { CreatepostComponent } from './createpost/createpost.component';
@@ -27,6 +29,8 @@ import { EditpostComponent } from './editpost/editpost.component';
     GenHomeComponent,
     GenLoginComponent,
     GenSignupComponent,
+    GenUserComponent,
+    GenAboutComponent,
     CreatepostComponent,
     ListallpostComponent,
     ListonepostComponent,

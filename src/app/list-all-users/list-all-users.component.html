@@ -1,0 +1,11 @@
+<hr />
+<h3>List of Users</h3>
+<hr />
+<div *ngFor="let users of listOfUsers">
+  <p>
+    {{ users.id }}.
+    <a routerLink="/listallusers/{{ users.id }}">
+      {{ users.firstName }}{{ users.lastName }}{{ users.email }}
+    </a>
+  </p>
+</div>
