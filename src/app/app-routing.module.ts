@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-// import { FormsModule} from '@angular/forms';
-// import { HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 import { PreloadAllModules, Routes, RouterModule } from '@angular/router';
 import { EditUsersComponent } from './edit-users/edit-users.component';
 import { GenAboutComponent } from './gen-about/gen-about.component';
@@ -51,6 +51,14 @@ const routes: Routes = [
   {path: 'createpost', component: CreatepostComponent},
 // localhost:3000/ editpost
   {path: 'editpost', component: EditpostComponent},
+// localhost:4200/about
+  {path: 'about', component:GenAboutComponent},
+// localhost:4200/listallusers/1
+  {path: 'listallusers/:userId', component: GenUserComponent},
+// localhost:4200/listallusers
+  {path: 'listallusers', component: ListAllUsersComponent},
+// localhost:4200/editusers/1
+  {path: 'edituser/:userId', component: EditUsersComponent},
  
 ];
 

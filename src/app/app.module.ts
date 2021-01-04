@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +25,7 @@ import { ListAllUsersComponent } from './list-all-users/list-all-users.component
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +42,16 @@ import { ListAllUsersComponent } from './list-all-users/list-all-users.component
     EditpostComponent,
     GenMillComponent,
     EditUsersComponent,
-    ListAllUsersComponent
+    ListAllUsersComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
     
   ],

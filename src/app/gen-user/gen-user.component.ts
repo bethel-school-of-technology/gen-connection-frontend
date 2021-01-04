@@ -11,7 +11,7 @@ import { UserService } from '../services/user.service';
 export class GenUserComponent implements OnInit {
   currentUser: Users = new Users();
 
-  userID!: number;
+  userID!: string;
 
   constructor(
     private actRoute: ActivatedRoute,
@@ -19,9 +19,13 @@ export class GenUserComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.userID = parseInt(this.actRoute.snapshot.paramMap.get("userID"));
-    // this.myUserService.getOnePost(this.userID).subscribe(response => {
-      // console.log(response);
-    console.log(this.userID);
+    this.userID = '';
+    this.userID += this.actRoute.snapshot.paramMap.get('userId');
+    console.log(this.actRoute.snapshot.paramMap.get('userId'));
+    this.myUserService.getOneUser(this.userID).subscribe((response: Users) => {
+      console.log(response);
+      console.log(this.userID);
+      this.currentUser = response;
+    });
   }
 }
