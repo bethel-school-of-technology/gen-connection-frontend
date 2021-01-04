@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,9 @@ import { CreatepostComponent } from './createpost/createpost.component';
 import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
 import { EditpostComponent } from './editpost/editpost.component';
+import { EditUsersComponent } from './edit-users/edit-users.component';
+import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
+
 
 
 
@@ -35,13 +40,18 @@ import { EditpostComponent } from './editpost/editpost.component';
     ListallpostComponent,
     ListonepostComponent,
     EditpostComponent,
-    GenMillComponent
+    GenMillComponent,
+    EditUsersComponent,
+    ListAllUsersComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
     
   ],
