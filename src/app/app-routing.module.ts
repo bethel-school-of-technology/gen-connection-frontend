@@ -25,31 +25,31 @@ import {UsersModule} from './modules/users/users.module';
 
 
 const routes: Routes = [
-  // localhost:3000 /gen-home 
+  // localhost: /gen-home 
   {
-    path: 'gen-home',
+    path: '',
     redirectTo: 'home',
     pathMatch: 'full',
   },
-// localhost:3000 /gen-xer
+// localhost: /gen-xer
   {path: 'gen-xer', component: GenXerComponent},
-// localhost:3000/ gen-boom
+// localhost:/ gen-boom
   {path: 'gen-boom', component: GenBoomComponent},
-//localhost:3000/gen-mill
+//localhost:/gen-mill
   {path: 'gen-mill', component: GenMillComponent},
-// localhost:3000/ gen-home
+// localhost:/ gen-home
   {path: 'home', component: GenHomeComponent},
-// localhost:3000/ gen-login
+// localhost:/ gen-login
   {path: 'login', component: GenLoginComponent},
-// localhost:3000/ gen-signup
+// localhost:/ gen-signup
   {path: 'signup', component: GenSignupComponent},
-// localhost:3000/ listallposts
+// localhost:/ listallposts
   {path: 'listallpost', component: ListallpostComponent},
-// localhost:3000/ listonepost
+// localhost:/ listonepost
   {path: 'listonepost', component: ListonepostComponent},
-// localhost:3000/ createpost
+// localhost:/ createpost
   {path: 'createpost', component: CreatepostComponent},
-// localhost:3000/ editpost
+// localhost:/ editpost
   {path: 'editpost', component: EditpostComponent},
 // localhost:4200/about
   {path: 'about', component:GenAboutComponent},

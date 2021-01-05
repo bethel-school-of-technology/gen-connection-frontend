@@ -1,0 +1,48 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  }
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 800px}
+
+/* Set cloud background and 100% height */
+.sidenav {
+  padding-top: 20px;
+  height: 100%;
+}
+
+/* Set cloud background color, white text and some padding */
+footer {
+  background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512'); 
+  background-size: cover;
+  padding: 30px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+} 
+  
+.sidenav {
+  width: 45%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
+    background-size: cover;
+}
+p {
+  font-size: 2em; 
+  border-style:solid;
+  border-color:rgb(81, 81, 233); 
+  border-radius: 5px; 
+
+}
+
+
+
+

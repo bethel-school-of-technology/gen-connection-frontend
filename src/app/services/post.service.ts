@@ -8,7 +8,7 @@ import { Post } from "../models/post";
 })
 export class PostService {
   [x: string]: any;
-myPostURL: string = "http://localhost:3000/post"
+myPostURL: string = "http://localhost:4200/post"
   constructor(private http:HttpClient) {}
 
     //   We need to be able to create a new post (CREATE)
