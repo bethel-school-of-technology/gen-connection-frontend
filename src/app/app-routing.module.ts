@@ -51,6 +51,10 @@ const routes: Routes = [
   {path: 'createpost', component: CreatepostComponent},
 // localhost:/ editpost
   {path: 'editpost', component: EditpostComponent},
+
+// localhost:/ gen-user
+  {path: 'gen-user', component: GenUserComponent},
+
 // localhost:4200/about
   {path: 'about', component:GenAboutComponent},
 // localhost:4200/listallusers/1
@@ -59,6 +63,7 @@ const routes: Routes = [
   {path: 'listallusers', component: ListAllUsersComponent},
 // localhost:4200/editusers/1
   {path: 'edituser/:userId', component: EditUsersComponent},
+
  
 ];
 
