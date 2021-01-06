@@ -19,6 +19,7 @@ import { EditpostComponent } from './editpost/editpost.component';
 import { ListallpostComponent } from './listallpost/listallpost.component';
 import { ListonepostComponent } from './listonepost/listonepost.component';
 import { GenMillComponent } from './gen-mill/gen-mill.component';
+import {UsersModule} from './modules/users/users.module';
 
 
 
@@ -50,8 +51,19 @@ const routes: Routes = [
   {path: 'createpost', component: CreatepostComponent},
 // localhost:/ editpost
   {path: 'editpost', component: EditpostComponent},
+
 // localhost:/ gen-user
   {path: 'gen-user', component: GenUserComponent},
+
+// localhost:4200/about
+  {path: 'about', component:GenAboutComponent},
+// localhost:4200/listallusers/1
+  {path: 'listallusers/:userId', component: GenUserComponent},
+// localhost:4200/listallusers
+  {path: 'listallusers', component: ListAllUsersComponent},
+// localhost:4200/editusers/1
+  {path: 'edituser/:userId', component: EditUsersComponent},
+
  
 ];
 
