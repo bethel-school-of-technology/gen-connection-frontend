@@ -20,6 +20,7 @@ import { ListonepostComponent } from './listonepost/listonepost.component';
 import { EditpostComponent } from './editpost/editpost.component';
 import { EditUsersComponent } from './edit-users/edit-users.component';
 import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
+import { GenProfileComponent } from './gen-profile/gen-profile.component';
 
 
 
@@ -43,6 +44,8 @@ import { ListAllUsersComponent } from './list-all-users/list-all-users.component
     GenMillComponent,
     EditUsersComponent,
     ListAllUsersComponent,
+    GenProfileComponent,
+    GenProfileComponent
    
     
   ],
