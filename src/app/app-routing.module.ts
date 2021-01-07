@@ -12,6 +12,7 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
 
 import { GenBoomComponent } from './gen-boom/gen-boom.component';
+import { GenProfileComponent } from './gen-profile/gen-profile.component';
 
 
 import { CreatepostComponent } from './createpost/createpost.component';
@@ -54,6 +55,8 @@ const routes: Routes = [
 
 // localhost:/ gen-user
   {path: 'gen-user', component: GenUserComponent},
+// localhost: / gen-profile
+  {path: 'gen-profile', component: GenProfileComponent},
 
 // localhost:4200/about
   {path: 'about', component:GenAboutComponent},
