@@ -10,7 +10,7 @@ import { PostService } from '../services/post.service';
 export class ListallpostComponent implements OnInit {
 
   //Property to store list of post
- listOfPosts: Post[] = []
+ listOfPosts: Post[] = [];
 
   constructor(private myPostService: PostService) { }
 
@@ -18,7 +18,7 @@ export class ListallpostComponent implements OnInit {
     this.myPostService.getAllPosts().subscribe(response => {
       console.log(response);
       this.listOfPosts = response;
-    })
+    });
   }
 
 }

@@ -1,7 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Post } from '../models/post';
 import { PostService } from '../services/post.service';
+
+
 
 @Component({
   selector: 'app-listonepost',
@@ -14,7 +17,9 @@ export class ListonepostComponent implements OnInit {
   currentPost: Post = new Post();
 
   postId!: number;
-  constructor(private actRoute: ActivatedRoute, private myPostService: PostService) { }
+  constructor(private actRoute: ActivatedRoute, private myPostService: PostService) {  
+   
+  }
 
   ngOnInit(): void {
     //Extracted the ID from URL
@@ -24,7 +29,7 @@ export class ListonepostComponent implements OnInit {
     this.myPostService.getOnePost(this.postId).subscribe(response => {
       console.log(response);
       this.currentPost = response;
-    })
+    });
   }
 
 }

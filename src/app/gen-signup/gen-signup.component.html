@@ -69,10 +69,10 @@
                     type="text"
                     id="inputUserName"
                     class="form-control"
-                    placeholder="userName"
+                    placeholder="username"
                     required
                     autofocus
-                    [(ngModel)]="newUser.userName"
+                    [(ngModel)]="newUser.username"
                     name="userName"
                   />
                   <label for="inputUserName">Username</label>
@@ -146,6 +146,9 @@
                 >
                   Reset
                 </button>
+                <div class="login-link">
+                  Already registered? <a routerLink="/login">Login Here!</a>
+                </div>
               </form>
             </div>
           </div>
@@ -154,3 +157,19 @@
     </div>
   </body>
 </html>
+
+<hr />
+<h3>Create a New User</h3>
+<hr />
+<form (ngSubmit)="createNew()">
+  <label>First Name </label>
+  <input type="text" name="firstName" [(ngModel)]="newUser.firstName" />
+  <br />
+  <label>Last Name </label>
+  <input type="text" name="lastName" [(ngModel)]="newUser.lastName" />
+  <br />
+  <label> Email </label>
+  <input type="text" name="email" [(ngModel)]="newUser.email" />
+  <br />
+  <button type="submit">Sign Up</button>
+</form>

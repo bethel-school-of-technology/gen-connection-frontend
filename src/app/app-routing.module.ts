@@ -12,6 +12,7 @@ import { GenXerComponent } from './gen-xer/gen-xer.component';
 import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
 
 import { GenBoomComponent } from './gen-boom/gen-boom.component';
+import { GenProfileComponent } from './gen-profile/gen-profile.component';
 
 
 import { CreatepostComponent } from './createpost/createpost.component';
@@ -51,6 +52,12 @@ const routes: Routes = [
   {path: 'createpost', component: CreatepostComponent},
 // localhost:/ editpost
   {path: 'editpost', component: EditpostComponent},
+
+// localhost:/ gen-user
+  {path: 'gen-user', component: GenUserComponent},
+// localhost: / gen-profile
+  {path: 'gen-profile', component: GenProfileComponent},
+
 // localhost:4200/about
   {path: 'about', component:GenAboutComponent},
 // localhost:4200/listallusers/1
@@ -59,6 +66,7 @@ const routes: Routes = [
   {path: 'listallusers', component: ListAllUsersComponent},
 // localhost:4200/editusers/1
   {path: 'edituser/:userId', component: EditUsersComponent},
+
  
 ];
 

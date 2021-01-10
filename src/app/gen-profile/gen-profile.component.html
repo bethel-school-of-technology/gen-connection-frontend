@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gen Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1d37766e6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Generation Connection</h1>
+      <h3>My Profile Page</h3>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">          
+         <h2>TITLE HEADING</h2>
+          <h5>Title description</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur 
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div> 
+        
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+      <div class="rightcolumn text-center">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height:100px;">Image</div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card text-center">
+          <h3>Generation Links</h3>
+          <br>
+
+          <ul class="nav nav-pills flex-column text-center">
+            <li class="nav-item">
+              <button type="button" class="btn btn-default btn-lg" (click)="btnClickBoom();">Baby Boomers</button>
+                  <a routerLink="/gen-boom"></a>
+                
+            </li>
+            <br>
+            <li class="nav-item">
+              <button type="button" class="btn btn-default btn-lg" (click)="btnClickX();">Generation X</button>
+              <a routerLink="/gen-xer"></a>
+            </li>
+            <br>
+            
+            <li class="nav-item">
+              <button type="button" class="btn btn-default btn-lg" (click)="btnClickMill();">Millennials</button>
+              <a routerLink="/gen-mill"></a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="card">
+        <form>
+          <div class="form-group">
+              <label for="blogTitle">Blog Title</label>
+              <input name="title" type="text"  class="form-control" id="blogTitle" aria-describedby="titleHelp" placeholder="Enter title">
+          </div>
+          <div class="form-group">
+              <label for="blogContent">Content</label>
+              <textarea name="description"  class="form-control" id="blogContent" placeholder="Content">
+              </textarea>
+          </div>           
+
+          <button type="button" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+        
+      </div>
+    </div>
+    
+    
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
