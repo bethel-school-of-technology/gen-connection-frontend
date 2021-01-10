@@ -9,14 +9,24 @@ import { LocalStorageService } from './localstorage.service';
 })
 export class PostService {
   [x: string]: any;
+
 myPostURL: string = "http://localhost:8080/api/post"
   constructor(private http:HttpClient, private localService:LocalStorageService ) {}
+
 
     //   We need to be able to create a new post (CREATE)
     //   Componenent needs to provide the new post info
 createPost(newPost: Post): Observable<Post>{
     return this.http.post<Post>(this.myPostURL, newPost)
 }
+
+/*createPost(post: Post){
+    return this.http.post('/api/post/createPost',{
+        title : post.title,
+        description : post.description
+    })
+}*/
+
     //   We need to be able to list/view all the posts (READ) 
 getAllPosts(): Observable<any> {
     let headers = new HttpHeaders();
