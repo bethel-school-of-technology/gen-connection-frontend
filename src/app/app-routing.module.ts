@@ -59,7 +59,7 @@ const routes: Routes = [
   {path: 'gen-profile', component: GenProfileComponent},
 
 // localhost:4200/about
-  {path: 'about', component:GenAboutComponent},
+  //{path: 'about', component:GenAboutComponent},
 // localhost:4200/listallusers/1
   {path: 'listallusers/:userId', component: GenUserComponent},
 // localhost:4200/listallusers
