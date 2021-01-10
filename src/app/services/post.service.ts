@@ -17,6 +17,14 @@ myPostURL: string = "http://localhost:8080/api/post"
 createPost(newPost: Post): Observable<Post>{
     return this.http.post<Post>(this.myPostURL, newPost)
 }
+
+/*createPost(post: Post){
+    return this.http.post('/api/post/createPost',{
+        title : post.title,
+        description : post.description
+    })
+}*/
+
     //   We need to be able to list/view all the posts (READ) 
 getAllPosts(): Observable<any> {
     let headers = new HttpHeaders();

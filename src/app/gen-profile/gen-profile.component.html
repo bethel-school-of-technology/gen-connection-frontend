@@ -85,19 +85,19 @@
           
         </div>
         <div class="card">
-        <form>
+        <form (ngSubmit)='createPost()'>        
           <div class="form-group">
               <label for="blogTitle">Blog Title</label>
-              <input name="title" type="text"  class="form-control" id="blogTitle" aria-describedby="titleHelp" placeholder="Enter title">
+              <input name="title" type="text" [(ngModel)]="post.title" class="form-control" id="blogTitle" aria-describedby="titleHelp" placeholder="Enter title">
           </div>
           <div class="form-group">
               <label for="blogContent">Content</label>
-              <textarea name="description"  class="form-control" id="blogContent" placeholder="Content">
+              <textarea name="description" [(ngModel)]="post.body" class="form-control" id="blogContent" placeholder="Enter content">
               </textarea>
-          </div>           
-
-          <button type="button" class="btn btn-primary">Add</button>
-      </form>
+          </div>
+          <button type="submit" class="btn btn-primary">Click here to add a post</button>    
+        </form>
+     
     </div>
         
       </div>
