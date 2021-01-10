@@ -8,7 +8,7 @@ import { Post } from "../models/post";
 })
 export class PostService {
   [x: string]: any;
-myPostURL: string = "http://localhost:4200/post"
+myPostURL: string = "http://localhost:8080/post"
   constructor(private http:HttpClient) {}
 
     //   We need to be able to create a new post (CREATE)
@@ -16,6 +16,14 @@ myPostURL: string = "http://localhost:4200/post"
 createPost(newPost: Post): Observable<Post>{
     return this.http.post<Post>(this.myPostURL, newPost)
 }
+
+/*createPost(post: Post){
+    return this.http.post('/api/post/createPost',{
+        title : post.title,
+        description : post.description
+    })
+}*/
+
     //   We need to be able to list/view all the posts (READ) 
 getAllPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.myPostURL)

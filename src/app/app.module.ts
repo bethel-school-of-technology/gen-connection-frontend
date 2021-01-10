@@ -27,6 +27,7 @@ import { GenProfileComponent } from './gen-profile/gen-profile.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,7 @@ import { GenProfileComponent } from './gen-profile/gen-profile.component';
     EditUsersComponent,
     ListAllUsersComponent,
     GenProfileComponent,
-    GenProfileComponent
+    
    
     
   ],
@@ -61,4 +62,4 @@ import { GenProfileComponent } from './gen-profile/gen-profile.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
