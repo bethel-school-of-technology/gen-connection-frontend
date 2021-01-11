@@ -42,4 +42,7 @@
     border-radius: 5px; 
   
   }
-  
+  body {
+   
+    background: linear-gradient(to right, #98b8e0, #33AEFF, rgb(40, 40, 218));
+  }
