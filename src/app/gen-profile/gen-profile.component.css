@@ -7,7 +7,11 @@
     font-family: Arial;
     padding: 20px;
     background: #f1f1f1;
-  }
+   
+      background: #007bff;
+      background: linear-gradient(to right, #0062E6, #33AEFF);
+    }
+
   
   /* Header/Blog Title */
   .header {

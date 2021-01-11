@@ -21,6 +21,9 @@ import { EditpostComponent } from './editpost/editpost.component';
 import { EditUsersComponent } from './edit-users/edit-users.component';
 import { ListAllUsersComponent } from './list-all-users/list-all-users.component';
 import { GenProfileComponent } from './gen-profile/gen-profile.component';
+import { PostService } from './services/post.service';
+import { LocalStorageService } from './services/localstorage.service';
+import { UserService } from './services/user.service';
 
 
 
@@ -59,7 +62,12 @@ import { GenProfileComponent } from './gen-profile/gen-profile.component';
     
     
   ],
-  providers: [],
+  providers: [
+    PostService,
+    LocalStorageService,
+    UserService
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { } 

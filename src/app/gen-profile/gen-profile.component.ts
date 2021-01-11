@@ -8,8 +8,12 @@ import { PostService } from '../services/post.service';
   templateUrl: './gen-profile.component.html',
   styleUrls: ['./gen-profile.component.css']
 })
+
 export class GenProfileComponent implements OnInit {
   public post: Post;
+  listofPosts: any;
+  
+ 
 
   constructor(private postService: PostService, private router: Router) {
     this.post = new Post();
@@ -25,6 +29,14 @@ export class GenProfileComponent implements OnInit {
       alert('Title and Description required');
     }
   }
+  
+  listAllPost() {
+    this.postService.getAllPosts().subscribe(response => {
+      console.log(response);
+      this.listofPosts = response;
+    });
+  }
+
 
   btnClickBoom () {
     this.router.navigateByUrl('/gen-boom');
@@ -39,6 +51,8 @@ export class GenProfileComponent implements OnInit {
   };
   
   ngOnInit(): void {
+    
   }
 
 }
+

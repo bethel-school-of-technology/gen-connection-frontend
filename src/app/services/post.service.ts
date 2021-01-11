@@ -9,13 +9,17 @@ import { LocalStorageService } from './localstorage.service';
 })
 export class PostService {
   [x: string]: any;
-myPostURL: string = "http://localhost:8080/api/post"
+
+myPostURL: string = "http://localhost:4200/post";
+postURL: string = "http://localhost:8080/post"
+
   constructor(private http:HttpClient, private localService:LocalStorageService ) {}
 
     //   We need to be able to create a new post (CREATE)
     //   Componenent needs to provide the new post info
 createPost(newPost: Post): Observable<Post>{
     return this.http.post<Post>(this.myPostURL, newPost)
+    console.log('post works!');
 }
 
 /*createPost(post: Post){
