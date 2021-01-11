@@ -37,18 +37,24 @@ getAllPosts(): Observable<any> {
 }
     //   We need to be able to list/view a single post (READ)
 getOnePost(reqID: number): Observable<Post>{
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.get<Post>(`${this.myPostURL}/${reqID}`)
 }
 
     //   We need to be able to edit the post (UPDATE) 
     //   Component needs to provide the ID as well as the updated post info
 updatePost(editID: number, edittedInfo: Post): Observable<Post>{
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.put<Post>(`${this.myPostURL}/${editID}`, edittedInfo)
 }
        
     //   We need to be able to delete the post (DELETE)
     //   Component needs to provide the ID
 deletePost(deleteID: number): Observable<any> {
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.delete<any>(`${this.myPostURL}/${deleteID}`)
 }
 
