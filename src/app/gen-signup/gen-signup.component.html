@@ -45,9 +45,9 @@
                     class="form-control"
                     placeholder="firstName"
                     required
-                    autofocus
                     [(ngModel)]="newUser.firstName"
                     name="firstName"
+                    onfocus="if(this.value == 'inputFirstName') { this.value = ''; }"
                   />
                   <label for="inputFirstName">First Name</label>
                 </div>
@@ -157,7 +157,7 @@
     </div>
   </body>
 </html>
-
+<!-- 
 <hr />
 <h3>Create a New User</h3>
 <hr />
@@ -172,4 +172,4 @@
   <input type="text" name="email" [(ngModel)]="newUser.email" />
   <br />
   <button type="submit">Sign Up</button>
-</form>
+</form> -->
