@@ -18,6 +18,9 @@ footer {
   background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512'); 
   background-size: cover;
   padding: 30px;
+  border-style:solid;
+  border-color:rgb(22, 22, 190); 
+  border-radius: 5px; 
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -38,13 +41,26 @@ footer {
 p {
   font-size: 2em; 
   border-style:solid;
-  border-color:rgb(81, 81, 233); 
+  border-color:rgb(22, 22, 190); 
   border-radius: 5px; 
 
 }
 body {
   background: linear-gradient(to right, #98b8e0, #33AEFF, rgb(40, 40, 218));
 }
+
+.btn {
+  border-style:solid;
+  border-color:rgb(22, 22, 190); 
+  border-radius: 5px; 
+  font-size: 30px;
+  color: #1575a1;    
+}
+.btn:hover {
+  background-color: #98b8e0;
+}
+
+
 
 
 

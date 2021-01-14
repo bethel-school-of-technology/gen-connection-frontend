@@ -22,8 +22,10 @@ export class GenProfileComponent implements OnInit {
   createPost() {
     if (this.post.title && this.post.body) {
       this.postService.createPost(this.post).subscribe((res: any) => {
-        console.log('response is', res)
+         console.log('response is', res) 
+         this.listAllPost();      
       });
+      
       // call the service method to add post
     } else {
       alert('Title and Description required');
@@ -51,7 +53,11 @@ export class GenProfileComponent implements OnInit {
   };
   
   ngOnInit(): void {
-    
+    if (localStorage.getItem("loggedin") === null || localStorage.getItem("loggedin") === "false") {
+     window.alert("please login first to access this page")
+      this.router.navigateByUrl("/login")
+    }
+    this.listAllPost();
   }
 
 }
