@@ -1,7 +1,8 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Users } from '../models/users';
+import {LocalStorageService} from './localstorage.service';
 
 @Injectable({
   providedIn: 'root',
@@ -20,22 +21,33 @@ export class UserService {
   }
   //   list a single user (Read)
   getOneUser(reqID: string): Observable<Users> {
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.get<Users>(this.myUserURL+'/'+reqID);
   }
   //   list all the users (Read)
   getAllUsers(): Observable<Users[]> {
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.get<Users[]>(this.myUserURL);
   }
   //   edit the user (Update)
   editUser(editID: string, edittedInfo: Users): Observable<Users> {
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.put<Users>(`${this.myUserURL}/${editID}`, edittedInfo);
   }
   //   delete the user (Delete)
   deleteUser(deleteId: string): Observable<any> {
+    let headers = new HttpHeaders();
+    headers = headers.set("Authorization", localStorage.getItem("token")||"")
     return this.http.delete<any>(`${this.myUserURL}/${deleteId}`);
   }
   //sign in
   loginUser(username: string, password: string): Observable<any> {
     return this.http.post<any>(this.loginURL, {username, password}, {observe:"response" });
+  }
+  public set() {
+    return this.HttpClient.set(this.myUserURL);
   }
 }
