@@ -22,4 +22,14 @@ export class GenLoginComponent implements OnInit {
       this.localService.set("token", response.body);
     })
   }
+  // userLogin() {
+  //   if (this.post.title && this.post.body) {
+  //     this.postService.createPost(this.post).subscribe((res: any) => {
+  //       console.log('response is', res)
+  //     });
+  //     // call the service method to add post
+  //   } else {
+  //     alert('Username or password is incorrect');
+  //   }
+  // }
 }
