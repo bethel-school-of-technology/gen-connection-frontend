@@ -36,24 +36,25 @@
     </div>
     <div class="row">
       <div class="leftcolumn">
-        <div class="card">          
-         <h2>My Last Post</h2>
+        <!-- <div class="card">          
+         <h2>My Posts</h2>
           <h5>Title description</h5>
           <div class="fakeimg" style="height:100px;">Image</div>
+          
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur 
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div> 
+        </div>  -->
         
         <div class="card">
           <h2>My Posts</h2>
-          <h5>Title description</h5>
+          <!-- <h5>Title description</h5> -->
           <div class="fakeimg" style="height:100px;">Image</div>
-          <p>Some text..</p>
+          <!-- <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco.</p>   
+            quis nostrud exercitation ullamco.</p>    -->
             <div *ngFor = "let post of listofPosts">
               
               <p>{{post.id}},
@@ -114,7 +115,7 @@
               <textarea name="description" [(ngModel)]="post.body" class="form-control" id="blogContent" placeholder="Enter content">
               </textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Click here to add a post</button>    
+          <button type="submit" class="btn btn-default">Click here to add a post</button>    
         </form>
         <br>
      

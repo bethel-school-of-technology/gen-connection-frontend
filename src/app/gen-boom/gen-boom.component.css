@@ -46,3 +46,13 @@
    
     background: linear-gradient(to right, #98b8e0, #33AEFF, rgb(40, 40, 218));
   }
+  .btn {
+    border-style:solid;
+    border-color:rgb(22, 22, 190); 
+    border-radius: 5px; 
+    font-size: 30px;
+    color: #1575a1;    
+  }
+  .btn:hover {
+    background-color: #98b8e0;
+  }

@@ -38,11 +38,22 @@
   p {
     font-size: 2em; 
     border-style:solid;
-    border-color:rgb(81, 81, 233); 
+    border-color:rgb(22, 22, 190); 
     border-radius: 5px; 
   
   }
   body {
    
     background: linear-gradient(to right, #98b8e0, #33AEFF, rgb(40, 40, 218));
+  }
+
+  .btn {
+    border-style:solid;
+    border-color:rgb(22, 22, 190); 
+    border-radius: 5px; 
+    font-size: 30px;
+    color: #1575a1;    
+  }
+  .btn:hover {
+    background-color: #98b8e0;
   }
