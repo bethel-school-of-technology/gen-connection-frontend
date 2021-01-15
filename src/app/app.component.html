@@ -6,13 +6,13 @@
     
   <a class="btn" routerLink="home" routerLinkActive="active">Home</a>
   <!-- <a class="btn" routerLink="about" routerLinkActive="active">About </a> -->
-  <a class="btn" routerLink="login" routerLinkActive="active">Login</a>
-  <a class="btn" routerLink="signup" routerLinkActive="active">Signup</a> 
-  <a *ngIf = "localService.get('loggedin') === 'true'" class="btn" (click)="logout()" routerLinkActive="active">Logout</a>
+  <a *ngIf = "localService.get('loggedin') === 'false'" class="btn" (click)="login()" routerLink="login" routerLinkActive="active">Login</a>
+  <a *ngIf = "localService.get('loggedin') === 'false'" class="btn" (click)="signup()" routerLink="signup" routerLinkActive="active">Signup</a> 
   <a class="btn" routerLink="gen-profile" routerLinkActive="active">Profile</a> 
   <a class="btn" routerLink="gen-boom" routerLinkActive="active">Generation Baby Boomer</a>  
   <a class="btn" routerLink="gen-xer" routerLinkActive="active">Generation X</a>  
   <a class="btn" routerLink="gen-mill" routerLinkActive="active">Generation Millennial</a> 
+  <a *ngIf = "localService.get('loggedin') === 'true'" class="btn" (click)="logout()" routerLinkActive="active">Logout</a>
 
 </nav> 
 

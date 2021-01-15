@@ -16,6 +16,7 @@ export class GenSignupComponent implements OnInit {
   createNew() {
     this.myUserService.newUser(this.newUser).subscribe((response: any) => {
       console.log(response);
+      this.router.navigateByUrl("/login")
       // this.router.navigate(['listallusers']);
     });
   }

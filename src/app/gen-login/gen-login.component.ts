@@ -21,20 +21,19 @@ export class GenLoginComponent implements OnInit {
   ngOnInit(): void {}
   login() {
     console.log(this.loginInfo);
-    this.myUserService.loginUser(this.loginInfo.username, this.loginInfo.password).subscribe(response=>{
-      console.log(response.body);
-      this.localService.set("token", response.body);
-      this.localService.set("loggedin", "true");
+    this.myUserService.loginUser(this.loginInfo.username, this.loginInfo.password).subscribe((response)=>{
+      console.log("Response Received")
+      console.log(response);
+      if (response.status===200){
+        this.localService.set("token", response.body);
+        this.localService.set("loggedin", "true");
+        this.router.navigateByUrl("/gen-profile")
+      }
+      else{
+        window.alert("Username or password is incorrect")
+      }
+      
     })
   }
-  // userLogin() {
-  //   if (this.loginInfo.username && this.loginInfo.password) {
-  //     this.myUserService.loginUser(this.loginInfo.username, this.loginInfo.password).subscribe((res: any) => {
-  //       console.log('response is', res);
-  //     });
-  //     // call the service method to add post
-  //   } else {
-  //     alert('Username or password is incorrect');
-  //   }
-  // }
+  
 }
