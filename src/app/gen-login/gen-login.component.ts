@@ -21,20 +21,11 @@ export class GenLoginComponent implements OnInit {
   ngOnInit(): void {}
   login() {
     console.log(this.loginInfo);
-<<<<<<< HEAD
     this.myUserService.loginUser(this.loginInfo.username, this.loginInfo.password).subscribe(response=>{
       console.log(response.body);
       this.localService.set("token", response.body);
       this.localService.set("loggedin", "true");
     })
-=======
-    this.myUserService
-      .loginUser(this.loginInfo.username, this.loginInfo.password)
-      .subscribe((response) => {
-        console.log(response.body);
-        this.localService.set('token', response.body);
-      });
->>>>>>> jwt
   }
   // userLogin() {
   //   if (this.loginInfo.username && this.loginInfo.password) {
