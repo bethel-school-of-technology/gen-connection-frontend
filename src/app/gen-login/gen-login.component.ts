@@ -9,7 +9,11 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./gen-login.component.css'],
 })
 export class GenLoginComponent implements OnInit {
-  constructor(private myUserService: UserService, private router: Router, private localService: LocalStorageService) {}
+  constructor(
+    private myUserService: UserService,
+    private router: Router,
+    private localService: LocalStorageService
+  ) {}
   loginInfo = {
     username: '',
     password: '',
@@ -23,4 +27,14 @@ export class GenLoginComponent implements OnInit {
       this.localService.set("loggedin", "true");
     })
   }
+  // userLogin() {
+  //   if (this.loginInfo.username && this.loginInfo.password) {
+  //     this.myUserService.loginUser(this.loginInfo.username, this.loginInfo.password).subscribe((res: any) => {
+  //       console.log('response is', res);
+  //     });
+  //     // call the service method to add post
+  //   } else {
+  //     alert('Username or password is incorrect');
+  //   }
+  // }
 }
