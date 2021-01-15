@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequiredValidator } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Post } from '../models/post';
 import { PostService } from '../services/post.service';
@@ -31,6 +32,13 @@ export class GenProfileComponent implements OnInit {
       alert('Title and Description required');
     }
   }
+
+  listOnePost(reqID: number) {
+    this.postService.getOnePost(reqID).subscribe(response => {
+      console.log(response);
+      // this.listOnePost = response;
+    });
+  }
   
   listAllPost() {
     this.postService.getAllPosts().subscribe(response => {
@@ -38,6 +46,13 @@ export class GenProfileComponent implements OnInit {
       this.listofPosts = response;
     });
   }
+
+  // deletePost() {
+  //   this.postService.deletePost().subscribe(response => {
+  //     console.log(response);
+  //     this.deletePost = response;
+  //   });
+  // }
 
 
   btnClickBoom () {
