@@ -13,9 +13,7 @@ export class PostService {
     myPostURL: string = "http://localhost:8080/api/post";
     postURL: string = "http://localhost:8080/post";
     //apiPost: string = "http://localhost:8080/api/post"
-    // myUserURL: string = 'http://localhost:3000/users';
-    //   loginURL: string = 'http://localhost:8080/login';
-    //   apiUser: string = 'http://localhost:8080/api/user'
+   
 
     constructor(private http: HttpClient, private localService: LocalStorageService) { }
 
@@ -53,10 +51,10 @@ export class PostService {
 
     //   We need to be able to delete the post (DELETE)
     //   Component needs to provide the ID
-    deletePost(deleteID: number): Observable<any> {
+    deletePost(deleteID: number): Observable<Post> {
         let headers = new HttpHeaders();
         headers = headers.set("Authorization", localStorage.getItem("token") || "")
-        return this.http.delete<any>(`${this.myPostURL}/${deleteID}`)
+        return this.http.delete<Post>(`${this.myPostURL}/${deleteID}`)
     }
 
 
