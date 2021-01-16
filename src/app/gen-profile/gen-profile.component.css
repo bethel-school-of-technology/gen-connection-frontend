@@ -21,6 +21,9 @@
     background: scroll url('https://source.unsplash.com/WEQbe2jBg40/414x512');
     background-size: 100%;
     }
+    .header-title{
+      font-family: 'Secular One', sans-serif;
+    }
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
@@ -52,6 +55,15 @@
     border-color:rgb(81, 81, 233); 
     border-radius: 5px; 
   }
+  .posts {
+    font-family: 'Waiting for the Sunrise', cursive;
+  }
+  .cover {
+    object-fit:cover;
+    width: 100%;
+    height:200px
+  
+  }
   
   
   /* Clear floats after the columns */
@@ -63,11 +75,13 @@
   
   /* Footer */
   .footer {
+    font-family: 'Rajdhani', sans-serif;
     padding: 20px;
     text-align: center; 
     margin-top: 20px;
     background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
     background-size: cover;
+    background: rgb(255, 255, 255, .3)
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

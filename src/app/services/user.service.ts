@@ -1,6 +1,7 @@
 import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+import { retry, catchError } from 'rxjs/operators';
 import { Users } from '../models/users';
 import { LocalStorageService } from './localstorage.service';
 
@@ -45,12 +46,33 @@ export class UserService {
   }
   //sign in
   loginUser(username: string, password: string): Observable<any> {
-    return this.http.post<any>(
-      this.loginURL,
-      { username, password },
-      { observe: 'response' }
-    );
+    return this.http
+      .post<any>(this.loginURL, { username, password }, { observe: 'response' })
+      .pipe(retry(1), catchError(this.handleError));
   }
+
+  handleError(error: any) {
+    let errorMessage = '';
+    console.log(error);
+    if (error.error instanceof ErrorEvent) {
+      if (error.url === 'http://localhost:8080/login') {
+        errorMessage = 'Please try logging in again';
+      } else {
+        // client-side error
+        errorMessage = `Error: ${error.error.message}`;
+      }
+    } else {
+      if (error.url === 'http://localhost:8080/login') {
+        errorMessage = 'Incorrect Username or Password';
+      } else {
+        // server-side error
+      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+      }
+    }
+    window.alert(errorMessage);
+    return throwError(errorMessage);
+  }
+
   public set() {
     return this.HttpClient.set(this.myUserURL);
   }

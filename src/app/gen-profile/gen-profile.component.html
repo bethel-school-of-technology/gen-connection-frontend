@@ -31,7 +31,7 @@
   <body>
 
     <div class="header">
-      <h1>Generation Connection</h1>     
+      <h1 class="header-title">Generation Connection</h1>     
       <h3>Lola's Profile Page</h3>
     </div>
     <div class="row">
@@ -50,7 +50,8 @@
         <div class="card">
           <h2>My Posts</h2>
           <a
-          ><img width="169" src="http://3.bp.blogspot.com/-ur97IUbnTUM/UA2VF21oBvI/AAAAAAAABqE/1gdiq_d1y7Y/s1600/old+keys+close.jpg" alt="Gen Connection"
+          >
+          <img class="cover" src="https://images.pexels.com/photos/615350/keys-shelf-keychain-lock-615350.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Gen Connection"
         /></a>
           <!-- <h5>Title description</h5> -->
           <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
@@ -58,7 +59,7 @@
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco.</p>    -->
-            <div *ngFor = "let post of listofPosts">
+            <div *ngFor = "let post of listofPosts" class="posts">
               
               <p>{{ post.id }}                
                 {{post.title}} <br> {{post.body}}</p> 
